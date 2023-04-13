@@ -1,5 +1,6 @@
 import { useState } from "react"
 import { sendMessage, isTyping } from "react-chat-engine";
+import { SendOutlined } from "@ant-design/icons";
 
 const MessageForm = (props) => {
 
@@ -27,6 +28,9 @@ const handleChange = (event) => {
         onSubmit={handleSubmit}
         className="message-input"
       />
+      <button type="submit" className="send-message-button">
+        <SendOutlined className=""/>
+      </button>
     </form>
   )
 }
