@@ -9,7 +9,7 @@ const MyMessage = ({message}) => {
     )
   }
   return(
-    <div className="message-bubble" style={{float: 'right'}} >
+    <div className="message-bubble message-bubble-my" style={{float: 'right'}} >
       {message.text}
     </div>
   )

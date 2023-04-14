@@ -15,7 +15,7 @@ const OtherMessage = ({ message, lastMessage }) => {
             style={{float: 'left'}}
           />
         ) : (
-          <div className="message-bubble" style={{float: 'left'}}> {message.text} </div>
+          <div className="message-bubble message-bubble-other" style={{float: 'left'}}> {message.text} </div>
         )
       }
     </div>
