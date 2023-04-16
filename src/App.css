@@ -92,7 +92,7 @@
 .chat-subtitle {
   color: #7554a0;
   font-weight: 600;
-  font-size: 12px;
+  font-size: 16px;
   padding-top: 4px;
 }
 
@@ -155,9 +155,9 @@
 
 .message-form-container {
   position: absolute;
-  bottom: 0px;
+  bottom: 5px;
   width: calc(100% - 36px);
-  padding: 18px;
+  padding: 10px 50px 5px 0px;
   background-color: rgb(240, 240, 240);
 }
 
@@ -169,13 +169,17 @@
 }
 
 .message-input {
-  height: 40px;
-  width: calc(100% - 132px);
+  overflow: hidden;
+  border-radius: 6px;
+  border: 1px solid #3b2a50;
   background-color: white;
-  border: 1px solid white;
-  padding: 0px 18px;
+  height: 40px;
+  width: calc(100% - 68px);
+  padding: 10px;
   outline: none;
   font-size: 15px;
+  resize: none;
+  display: inline-block;
 }
 
 .image-button {
@@ -196,6 +200,24 @@
   top: 1px;
   position: relative;
   transform: rotate(-90deg);
+}
+
+.send-message-button {
+  height: 40px;
+  background-color: white;
+  padding: 0px 18px;
+  cursor: pointer;
+  display: inline-block;
+  border-radius: 6px;
+  border: 1px solid #3b2a50;
+  position: absolute;
+}
+
+.send-message-button:hover {
+  background-color: #967bb6;
+  border: 1px solid #967bb6;
+  font-size: 18px;
+  color: rgb(240, 240, 240);
 }
 
 .picture-icon {
@@ -287,4 +309,58 @@
 .button:hover span:after {
   opacity: 1;
   right: 0;
+}
+
+.message-container {
+  display: flex;
+  width: 100%;
+  float: left;
+  margin-right: 18px;
+}
+
+.message-bubble {
+  padding: 5px;
+  border-radius: 10px;
+  font-size: 17px;
+  max-width: 60%;
+}
+
+.message-bubble-my {
+  background-color: #7554a0;
+  color: rgb(240, 240, 240);
+}
+
+.message-bubble-other {
+  background-color: rgb(240, 240, 240);
+  color: #7554a0;
+}
+
+.login-form-container {
+  width: 100%;
+  height: 100vh;
+  background-color: rgb(240, 240, 240);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-form-view {
+  background-color: rgb(240, 240, 240);
+  color: #7554a0;
+}
+
+.login-btn {
+  color: rgb(240, 240, 240);
+  background-color: #7554a0;
+  float: right;
+}
+
+.login-btn:hover {
+  background-color: rgb(240, 240, 240);
+  color: #7554a0;
+  border: 1px solid #7554a0;
+}
+
+.anticon {
+  vertical-align: 0.125em;
 }
